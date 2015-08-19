@@ -1,0 +1,79 @@
+= Spring Cloud Connectors XML Sample
+
+This app is a sample of using XML to configure https://github.com/spring-cloud/spring-cloud-connectors/tree/master/spring-cloud-spring-service-connector#the-cloud-namespace[Spring Cloud Connectors]. It demonstrates two different ways of using the `cloud` namespace provided by Spring Cloud Connectors.
+
+* Using `<cloud:data-source>` to let Spring Cloud Connectors create a `DataSource` bean that is configured with the connection properties from a bound service.
+
+[source,java]
+----
+  <cloud:data-source id="testDataSource" service-name="test-db">
+    <cloud:pool pool-size="20" max-wait-time="200"/>
+  </cloud:data-source>
+----
+
+* Using `<cloud:properties>` to get the connection properties from a bound service as property placeholders that can be used to configure a `DataSource` manually.
+
+[source,java]
+----
+  <cloud:properties id="cloud-properties"/>
+  <context:property-placeholder properties-ref="cloud-properties"/>
+
+  <bean id="testDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+    <property name="url" value="${cloud.services.test-db.connection.jdbcUrl}" />
+    <property name="username" value="${cloud.services.test-db.connection.username}"/>
+    <property name="password" value="${cloud.services.test-db.connection.password}"/>
+  </bean>
+----
+
+The app also shows usage of property placeholder values provided by Spring Boot's http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#cloud-deployment-cloud-foundry-services[`VcapApplicationListener`].
+
+[source,java]
+----
+  <bean id="testDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+    <property name="url" value="${vcap.services.test-db.credentials.jdbcUrl}" />
+    <property name="username" value="${vcap.services.test-db.credentials.username}"/>
+    <property name="password" value="${vcap.services.test-db.credentials.password}"/>
+  </bean>
+----
+
+== Building
+
+Build the app with the following command:
+
+[source,bash]
+----
+$ ./gradlew assemble
+----
+
+== Running on Cloud Foundry
+
+Before pushing the app, create a MySQL database service as either a managed service instance or user-provided service instance. The name of the service instance must be `test-db` to match the property names in the XML configuration. If creating a user-provided service instance, the credentials should be formed as followed:
+
+[source,bash]
+----
+$ cf cups test-db -p '{"jdbcUrl":"jdbc:mysql://{hostname}:3306/{dbname}","username":"{username}","password":"{password}"}'
+----
+
+where `{hostname}`, `{dbname}` `{username}`, and `{password}` are replaced by the appropriate values for the database (without the curly braces).
+
+Then push the app to CF:
+
+[source,bash]
+----
+$ cf push
+----
+
+Then browse to the app's route to see the data stored in the database.
+
+The three configuration options listed above are selected by Spring profiles. To enable one of the profiles,
+
+[source,bash]
+----
+$ cf set-env spring-cloud-connectors-xml SPRING_PROFILES_ACTIVE {profile name}
+$ cf restage spring-cloud-connectors-xml
+----
+
+where `{profile name}` is one of `auto`, `cloud-properties`, or `boot-properties` corresponding to the three configuration approaches listed above.
+

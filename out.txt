@@ -1,0 +1,102 @@
+Connected, dumping recent logs for app product-2_0 in org ESI / space development as ssahadevan@pivotal.io...
+
+2015-07-17T08:15:10.17-0500 [App/0]      OUT     "description": "1",
+2015-07-17T08:15:10.17-0500 [App/0]      OUT     "price": {
+2015-07-17T08:15:10.17-0500 [App/0]      OUT       "currency": "USD",
+2015-07-17T08:15:10.17-0500 [App/0]      OUT       "amount": 2.49,
+2015-07-17T08:15:10.17-0500 [App/0]      OUT       "formattedAmount": "$2.49"
+2015-07-17T08:15:10.17-0500 [App/0]      OUT     },
+2015-07-17T08:15:10.17-0500 [App/0]      OUT     "upc": "7777",
+2015-07-17T08:15:10.17-0500 [App/0]      OUT     "inventoryCount": 999,
+2015-07-17T08:15:10.17-0500 [App/0]      OUT     "categoryList": {
+2015-07-17T08:15:10.17-0500 [App/0]      OUT       "categories": [
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         {
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "categoryId": "1",
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "categoryName": "BOOKS"
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         }
+2015-07-17T08:15:10.17-0500 [App/0]      OUT       ]
+2015-07-17T08:15:10.17-0500 [App/0]      OUT     },
+2015-07-17T08:15:10.17-0500 [App/0]      OUT     "productAttributeList": {
+2015-07-17T08:15:10.17-0500 [App/0]      OUT       "productAttributes": [
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         {
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeName": "topic",
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeValue": "N/A"
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         },
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         {
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeName": "author",
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeValue": "N/A"
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         },
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         {
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeName": "language",
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeValue": "en"
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         },
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         {
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeName": "format",
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeValue": "hard"
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         },
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         {
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeName": "condition",
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeValue": "new"
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         },
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         {
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeName": "publisher",
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeValue": "N/A"
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         },
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         {
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeName": "edition",
+2015-07-17T08:15:10.17-0500 [App/0]      OUT           "attributeValue": "N/A"
+2015-07-17T08:15:10.17-0500 [App/0]      OUT         }
+2015-07-17T08:15:10.17-0500 [App/0]      OUT       ]
+2015-07-17T08:15:10.17-0500 [App/0]      OUT     }
+2015-07-17T08:15:10.17-0500 [App/0]      OUT   }
+2015-07-17T08:15:10.17-0500 [App/0]      OUT }}
+2015-07-17T08:15:10.17-0500 [App/0]      OUT 13:15:10.179 [qtp7788116-43] DEBUG org.eclipse.jetty.server.Server - RESPONSE for /getProduct h=true
+2015-07-17T08:15:10.17-0500 [App/0]      OUT 200 null
+2015-07-17T08:15:10.17-0500 [App/0]      OUT Date: Fri, 17 Jul 2015 13:15:09 GMT
+2015-07-17T08:15:10.17-0500 [App/0]      OUT X-NewRelic-App-Data: PxQGUVVSDAcIR1ZWBwMCUl0TGhE1AwE2QgNWEVlbQFtcC2VOYwRAFjNTVTIDEU5aUwE9TVBUQzYWXlJGARJDSmAtazYRGhgCHVUIVx1RHVBXDwdRX1sLHwJXVU4VAlUFVFMFUFRSW1tTUQFTWxpp
+2015-07-17T08:15:10.17-0500 [App/0]      OUT Content-Type: application/xml
+2015-07-17T08:15:10.17-0500 [App/0]      OUT 13:15:10.179 [qtp7788116-43] DEBUG o.e.jetty.server.HttpChannelState - HttpChannelState@73413936{s=DISPATCHED a=null i=true r=!P!U w=false} unhandle DISPATCHED
+2015-07-17T08:15:10.17-0500 [App/0]      OUT 13:15:10.179 [qtp7788116-43] DEBUG org.eclipse.jetty.server.HttpChannel - Commit HTTP/1.1{s=200,h=3} to HttpChannelOverHttp@5b0f6158{r=1,c=true,a=COMPLETED,uri=/getProduct}
+2015-07-17T08:15:10.17-0500 [App/0]      OUT 13:15:10.179 [qtp7788116-43] DEBUG o.e.jetty.server.HttpConnection - org.eclipse.jetty.server.HttpConnection$SendCallback@6cca61d4[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@602cc3dd] generate: NEED_HEADER (null,[p=0,l=1405,c=32768,r=1405],true)@START
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.180 [qtp7788116-43] DEBUG o.e.jetty.server.HttpConnection - org.eclipse.jetty.server.HttpConnection$SendCallback@6cca61d4[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@602cc3dd] generate: FLUSH ([p=0,l=280,c=8192,r=280],[p=0,l=1405,c=32768,r=1405],true)@COMPLETING
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.180 [qtp7788116-43] DEBUG org.eclipse.jetty.io.WriteFlusher - write: WriteFlusher@7671bfae{IDLE} [HeapByteBuffer@3f887b51[p=0,l=280,c=8192,r=280]={<<<HTTP/1.1 200 OK\r\n...ength: 1405\r\n\r\n>>>b5f-0eae-42af-aa1...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},DirectByteBuffer@66851323[p=0,l=1405,c=32768,r=1405]={<<<<?xml version="1....roductResponse>>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.180 [qtp7788116-43] DEBUG org.eclipse.jetty.io.WriteFlusher - update WriteFlusher@7671bfae{WRITING}:IDLE-->WRITING
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.180 [qtp7788116-43] DEBUG org.eclipse.jetty.io.ChannelEndPoint - flushed 1685 SelectChannelEndPoint@4f088829{/192.168.109.12:27708<->61627,Open,in,out,-,W,252/30000,HttpConnection}{io=0/0,kio=0,kro=1}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.180 [qtp7788116-43] DEBUG org.eclipse.jetty.io.WriteFlusher - Flushed=true 280/280+1 WriteFlusher@7671bfae{WRITING}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.181 [qtp7788116-43] DEBUG org.eclipse.jetty.io.WriteFlusher - update WriteFlusher@7671bfae{IDLE}:WRITING-->IDLE
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.181 [qtp7788116-43] DEBUG o.e.jetty.server.HttpConnection - org.eclipse.jetty.server.HttpConnection$SendCallback@6cca61d4[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@602cc3dd] generate: DONE ([p=280,l=280,c=8192,r=0],[p=1405,l=1405,c=32768,r=0],true)@END
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.181 [qtp7788116-43] DEBUG org.eclipse.jetty.http.HttpParser - reset HttpParser{s=END,234 of 234}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.181 [qtp7788116-43] DEBUG org.eclipse.jetty.http.HttpParser - END --> START
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.181 [qtp7788116-43] DEBUG org.eclipse.jetty.server.HttpChannel - HttpChannelOverHttp@5b0f6158{r=1,c=false,a=IDLE,uri=-} handle exit, result COMPLETE
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.184 [qtp7788116-43] DEBUG org.eclipse.jetty.io.ChannelEndPoint - filled -1 SelectChannelEndPoint@4f088829{/192.168.109.12:27708<->61627,Open,in,out,-,-,4/30000,HttpConnection}{io=0/0,kio=0,kro=1}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.184 [qtp7788116-43] DEBUG org.eclipse.jetty.io.ChannelEndPoint - ishut SelectChannelEndPoint@4f088829{/192.168.109.12:27708<->61627,Open,in,out,-,-,4/30000,HttpConnection}{io=0/0,kio=0,kro=1}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.184 [qtp7788116-43] DEBUG org.eclipse.jetty.http.HttpParser - atEOF HttpParser{s=START,0 of -1}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.184 [qtp7788116-43] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@714234fa<--HeapByteBuffer@3cc334fe[p=0,l=0,c=8192,r=0]={<<<>>>POST /getProduct ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled -1
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.185 [qtp7788116-43] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@714234fa<--HeapByteBuffer@3cc334fe[p=0,l=0,c=8192,r=0]={<<<>>>POST /getProduct ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@3cc334fe[p=0,l=0,c=8192,r=0]={<<<>>>POST /getProduct ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.185 [qtp7788116-43] DEBUG org.eclipse.jetty.http.HttpParser - parseNext s=START HeapByteBuffer@3cc334fe[p=0,l=0,c=8192,r=0]={<<<>>>POST /getProduct ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.185 [qtp7788116-43] DEBUG org.eclipse.jetty.http.HttpParser - START --> CLOSED
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.185 [qtp7788116-43] DEBUG o.eclipse.jetty.io.AbstractEndPoint - onClose SelectChannelEndPoint@4f088829{/192.168.109.12:27708<->61627,CLOSED,ISHUT,out,-,-,5/30000,HttpConnection}{io=0/0,kio=0,kro=1}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.185 [qtp7788116-43] DEBUG org.eclipse.jetty.io.ChannelEndPoint - close SelectChannelEndPoint@4f088829{/192.168.109.12:27708<->61627,CLOSED,ISHUT,out,-,-,5/30000,HttpConnection}{io=0/0,kio=0,kro=1}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.185 [qtp7788116-43] DEBUG org.eclipse.jetty.io.ManagedSelector - Queued change org.eclipse.jetty.io.ManagedSelector$2@5984d740 on org.eclipse.jetty.io.ManagedSelector@18213a65 id=0 keys=1 selected=0
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.186 [qtp7788116-43] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@714234fa<--HeapByteBuffer@3cc334fe[p=0,l=0,c=8192,r=0]={<<<>>>POST /getProduct ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=CLOSED,0 of -1}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.186 [qtp7788116-43] DEBUG o.e.jetty.server.HttpConnection - releaseRequestBuffer HttpConnection@714234fa<--HeapByteBuffer@3cc334fe[p=0,l=0,c=8192,r=0]={<<<>>>POST /getProduct ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.186 [qtp7788116-43] DEBUG o.e.jetty.server.HttpConnection - HttpConnection@714234fa<--null onFillable exit HttpChannelState@73413936{s=IDLE a=null i=true r=!P!U w=false}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.186 [qtp7788116-43] DEBUG o.e.j.u.t.s.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34 ran org.eclipse.jetty.io.SelectChannelEndPoint$2@20d71269
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.186 [qtp7788116-43] DEBUG o.e.j.u.t.s.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34 produce exit
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.186 [qtp7788116-43] DEBUG o.e.j.util.thread.QueuedThreadPool - ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.187 [qtp7788116-28] DEBUG org.eclipse.jetty.io.ManagedSelector - Selector loop woken up from select, 0/0 selected
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.187 [qtp7788116-28] DEBUG o.e.j.u.t.s.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34 produced org.eclipse.jetty.io.ManagedSelector$2@5984d740
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.187 [qtp7788116-28] DEBUG o.e.j.u.t.s.ExecuteProduceConsume - EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34 dispatch
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.187 [qtp7788116-28] DEBUG o.e.j.util.thread.QueuedThreadPool - queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.187 [qtp7788116-32] DEBUG o.e.j.util.thread.QueuedThreadPool - run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.188 [qtp7788116-32] DEBUG o.e.j.u.t.s.ExecuteProduceConsume - EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34 run
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.188 [qtp7788116-32] DEBUG o.e.j.u.t.s.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34 produce enter
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.188 [qtp7788116-32] DEBUG o.e.j.u.t.s.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34 producing
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.188 [qtp7788116-32] DEBUG org.eclipse.jetty.io.ManagedSelector - Selector loop waiting on select
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.188 [qtp7788116-28] DEBUG o.e.j.u.t.s.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34 run org.eclipse.jetty.io.ManagedSelector$2@5984d740
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.188 [qtp7788116-28] DEBUG org.eclipse.jetty.io.ManagedSelector - Destroyed SelectChannelEndPoint@4f088829{/192.168.109.12:27708<->61627,CLOSED,ISHUT,OSHUT,-,-,8/30000,HttpConnection}{io=0/0,kio=-1,kro=-1}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.188 [qtp7788116-28] DEBUG o.e.jetty.io.AbstractConnection - onClose HttpConnection@714234fa<--null
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.189 [qtp7788116-28] DEBUG o.eclipse.jetty.io.AbstractEndPoint - onClose SelectChannelEndPoint@4f088829{/192.168.109.12:27708<->61627,CLOSED,ISHUT,OSHUT,-,-,9/30000,HttpConnection}{io=0/0,kio=-1,kro=-1}
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.189 [qtp7788116-28] DEBUG o.e.j.u.t.s.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34 ran org.eclipse.jetty.io.ManagedSelector$2@5984d740
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.189 [qtp7788116-28] DEBUG o.e.j.u.t.s.ExecuteProduceConsume - EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34 produce exit
+2015-07-17T08:15:10.18-0500 [App/0]      OUT 13:15:10.189 [qtp7788116-28] DEBUG o.e.j.util.thread.QueuedThreadPool - ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@313b6b34

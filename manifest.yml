@@ -1,0 +1,7 @@
+---
+applications:
+- name: stockAnalyzerV2
+  memory: 512M
+  instances: 1
+  path: build/libs/stockAnalyzerV2.jar
+  services: [ StockAnalyzerDb ]
