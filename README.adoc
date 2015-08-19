@@ -6,6 +6,11 @@ Runs on fe west 1 at
 https://stockanalyzerv2.west-1.fe.gopivotal.com/index
 
 
+Original written in python is at 
+
+http://analyze-stock.appspot.com/
+
+
 
 
 
