@@ -25,16 +25,17 @@
      <!--  {% include "nav.html" %} --> 
             <div align="center">           
             
-         
+
 
 <p class="ex1"></p>
-<b> <p th:text="'Results for ' + ${tickerName} +  '!' "   /> </b> 
+<b> <p th:text="'History of recommendations'" /></b> 
 
 &nbsp;&nbsp;
- <div align="center">
+ <div align="center" th:unless="${#lists.isEmpty(tickerHistoryList)}">
        <table id="box-table-a" summary="CurrentConfiguration">
                 <thead>
                     <tr>
+                        <th scope="col">Ticker</th>
                         <th scope="col">Price</th>
                         <th scope="col">pe</th>
                         <th scope="col">Yield</th>
@@ -42,11 +43,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>  <p th:text="${price}"   /> </td>
-                        <td>  <p th:text="${pe}" /> </td>
-                        <td>  <p th:text="${yield}" /> </td>
-                        <td>  <p th:text="${recommendation}" /> </td>
+                    <tr th:each="tickerHistory : ${tickerHistoryList}">
+                        <td>  <p th:text="${tickerHistory.getTicker()}"   /> </td>
+                        <td>  <p th:text="${tickerHistory.price}"   /> </td>
+                        <td>  <p th:text="${tickerHistory.pe}" /> </td>
+                        <td>  <p th:text="${tickerHistory.yield}" /> </td>
+                        <td>  <p th:text="${tickerHistory.recommendation}" /> </td>
  				    </tr>
                 </tbody>
                 </table>            

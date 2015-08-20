@@ -2,6 +2,8 @@ package org.example;
 
 //import domain.City;
 
+import java.util.List;
+
 import org.example.domain.City;
 import org.example.domain.TickerHistory;
 import org.example.repositories.CityRepository;
@@ -9,6 +11,7 @@ import org.example.repositories.TickerHistoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
@@ -24,6 +27,12 @@ public class GreetingController {
 	
 	@Autowired
   	TickerHistoryRepository tickerHistoryRepository ;
+	
+	
+	@ModelAttribute("tickerHistoryList")
+	public List<TickerHistory> getTickerHistoryList() {
+	    return (List<TickerHistory>) this.tickerHistoryRepository.findAll();
+	}
 
     @RequestMapping("/greeting")
     public String greeting(@RequestParam(value="name", required=false, defaultValue="World") String name, Model model) {

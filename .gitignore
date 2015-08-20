@@ -20,3 +20,21 @@ target/classes/templates/macroData.html
 .gitold/objects/3e/96067f31b9e93a6cc5738672d98bbac6b07087
 
 .gitold/objects/3e/96067f31b9e93a6cc5738672d98bbac6b07087
+
+*.class
+
+bin/org/example/GreetingController.class
+
+build/classes/main/org/example/GreetingController.class
+
+build/distributions/StockAnalyzer-java-v2.zip
+
+build/distributions/StockAnalyzer-java-v2.tar
+
+.gradle/2.3/taskArtifacts/cache.properties.lock
+
+.gradle/2.3/taskArtifacts/fileHashes.bin
+
+.gradle/2.3/taskArtifacts/fileSnapshots.bin
+
+.gradle/2.3/taskArtifacts/taskArtifacts.bin
